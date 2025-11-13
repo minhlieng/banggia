@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bảng giá</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <style>
+h6 {
+  display: inline-block;
+  position: relative;
+  font-size: 32px;
+  padding-bottom: 6px;
+}
+
+h6::after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  bottom: 0;
+  width: 50%;
+  height: 4px;
+  background: linear-gradient(to right, #FFFF00 33%, #007500 33% 66%, #053384 66%);
+}
+h3{
+  color: #ffffff;
+}
+.card-header {
+    background-color: #07223c;
+}
+</style>
+</head>
+<body class="hold-transition layout-top-nav">
+<div class="wrapper">
+
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-11" style="text-align: center; color: #053384;">
+            <h1>GIÁ DỊCH VỤ KHÁM BỆNH ĐƠN VỊ BỆNH VIỆN TRƯỜNG ĐẠI HỌC TRÀ VINH</h1>
+            <h6>Kèm theo Nghị quyết số: 259/NQ-HĐND ngày 31/10/2025 của Hội đồng nhân dân tỉnh Vĩnh Long</h6>
+          </div>         
+          <div class="col-sm-1" style="margin-left: auto;    display: flex;    align-items: center;">
+            <img src="dist/img/header3.png" style="max-height: 80px;    height: auto;    width: auto;" >
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Giá Khám bệnh</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table id="example2" class="table table-bordered table-hover" style="text-align: center;">
+                  <thead>
+                  <tr>
+                    <th style="width: 3%;">STT</th>
+                    <th>Tên dịch vụ</th>
+                    <th style="width: 6%;">Giá BHYT</th>
+                    <th style="width: 6%;">Giá không BHYT</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr><td>1</td><td style='text-align: left;'>Giá khám bệnh Bệnh viện hạng II</td><td>45000</td><td>45000</td></tr>
+                  <tr><td>2</td><td style='text-align: left;'>Hội chẩn để xác định ca bệnh khó (chuyên gia/ca; Chỉ áp dụng đối với trường hợp mời chuyên gia đơn vị khác đến hội chẩn tại cơ sở khám, chữa bệnh).</td><td>200000</td><td>200000</td></tr>
+                  <tr><td>3</td><td style='text-align: left;'>Khám cấp giấy chứng thương, giám định y khoa (không kể xét nghiệm, X-quang)</td><td></td><td>160000</td></tr>
+                  <tr><td>4</td><td style='text-align: left;'>Khám sức khỏe toàn diện lao động, lái xe, khám sức khỏe định kỳ (không kể xét nghiệm, X-quang)</td><td></td><td>160000</td></tr>
+                  <tr><td>5</td><td style='text-align: left;'>Khám sức khỏe toàn diện cho người đi xuất khẩu lao động (không kể xét nghiệm, X-quang)</td><td></td><td>450000</td></tr>               
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Giá dịch vụ ngày giường bệnh</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table id="example2" class="table table-bordered table-hover" style="text-align: center;">
+                  <thead>
+                  <tr>
+                    <th style="width: 3%;">STT</th>
+                    <th>Tên dịch vụ</th>
+                    <th style="width: 6%;">Giá BHYT</th>
+                    <th style="width: 6%;">Giá không BHYT</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr><td>1</td><td style='text-align: left;'>Ngày điều trị Hồi sức tích cực (ICU)/ghép tạng/ghép tủy /ghép tế bào gốc</td><td>799600</td><td>799600</td></tr>
+                  <tr><td>2</td><td style='text-align: left;'>Ngày giường bệnh Hồi sức cấp cứu</td><td>418500</td><td>418500</td></tr>
+                  <tr><td>3.1</td><td style='text-align: left;'>Ngày giường bệnh Nội khoa Loại 1: Các khoa: Truyền nhiễm, Hô hấp, Huyết học, Ung thư, Tim mạch, Tâm thần, Thần kinh, Lão, Nhi, Tiêu hoá, Thận học, Nội tiết; Dị ứng (đối với bệnh nhân dị ứng thuốc nặng: Stevens Jonhson hoặc Lyell)</td><td>257100</td><td>257100</td></tr>
+                  <tr><td>3.2</td><td style='text-align: left;'>Ngày giường bệnh Nội khoa Loại 2: Các Khoa: Cơ-Xương-Khớp, Da liễu, Dị ứng, Tai-Mũi-Họng, Mắt, Răng Hàm Mặt, Ngoại, Phụ -Sản không mổ; YHDT/ PHCN cho nhóm người bệnh tổn thương tủy sống, tai biến mạch máu não, chấn thương sọ não.</td><td>222300</td><td>222300</td></tr>
+                  <tr><td>3.3</td><td style='text-align: left;'>Ngày giường bệnh Nội khoa Loại 3: Các khoa:  YHDT, Phục hồi chức năng</td><td>177300</td><td>177300</td></tr>
+                  <tr><td>4.1</td><td style='text-align: left;'>Ngày giường bệnh ngoại khoa, bỏng Loại 1 : Sau các phẫu thuật loại đặc biệt; Bỏng độ 3-4 trên 70% diện tích cơ thể</td><td>341800</td><td>341800</td></tr>
+                  <tr><td>4.2</td><td style='text-align: left;'>Ngày giường bệnh ngoại khoa, bỏng Loại 2 : Sau các phẫu thuật loại 1; Bỏng độ 3-4 từ 25 -70% diện tích cơ thể</td><td>301600</td><td>301600</td></tr>
+                  <tr><td>4.3</td><td style='text-align: left;'>Ngày giường bệnh ngoại khoa, bỏng Loại 3 : Sau các phẫu thuật loại 2; Bỏng độ 2 trên 30% diện tích cơ thể, Bỏng độ 3-4 dưới 25% diện tích cơ thể</td><td>269200</td><td>269200</td></tr>
+                  <tr><td>4.4</td><td style='text-align: left;'>Ngày giường bệnh ngoại khoa, bỏng Loại 4 : Sau các phẫu thuật loại 3; Bỏng độ 1, độ 2 dưới 30% diện tích cơ thể</td><td>229200</td><td>229200</td></tr>
+                  <tr><td>II</td><td style='text-align: left;'>Ngày giường bệnh ban ngày</td><td colspan="2">Được tính bằng 0,3 lần giá ngày giường của các khoa và loại phòng tương ứng</td></tr>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Giá dịch vụ kỹ thuật và xét nghiệm (bao gồm [gây tê])</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table id="example1" class="table table-bordered table-striped" style="text-align: center;">
+                  <thead>
+                  <tr>
+                    <th style="width: 3%;">STT</th>
+                    <th>Mã tương đương</th>
+                    <th>Mã kỹ thuật theo TT23/2024/TT-BYT</th>
+                    <th style='text-align: left;'>Tên danh mục kỹ thuật theo TT23/2024/TT-BYT</th>
+                    <th style="width: 6%;">Giá BHYT</th>
+                    <th style="width: 6%;">Giá không BHYT</th>
+                    <th style='text-align: left;'>Ghi chú</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                 
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables  & Plugins -->
+<script src="plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="plugins/jszip/jszip.min.js"></script>
+<script src="plugins/pdfmake/pdfmake.min.js"></script>
+<script src="plugins/pdfmake/vfs_fonts.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script>
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true, 
+      "lengthChange": false,
+       "autoWidth": false,
+    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+    $('#example2').DataTable({
+      "paging": false,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": false,
+      "info": false,
+      "autoWidth": false,
+      "responsive": false,
+    });
+  });
+</script>
+<script>
+  // Duyệt qua toàn bộ các ô <td>
+  document.querySelectorAll('#example2 td').forEach(td => {
+    // Lấy text trong ô
+    let val = td.textContent.trim();
+
+    // Nếu là số
+    if (!isNaN(val) && val !== "") {
+      // Chuyển sang số thực
+      const num = parseFloat(val);
+
+      // Format theo chuẩn Việt Nam (dấu . cho hàng ngàn)
+      td.textContent = num.toLocaleString('vi-VN');
+    }
+  });
+</script>
+</body>
+</html>
